@@ -10,9 +10,14 @@ const Day = (props) => {
         [styles.current]: format(currentDay, 'd') === format(day, 'd')
     })
 
+    const changeDay = () => {
+        const newCurrentDay = day;
+        changeCurrentDay(newCurrentDay);
+    }
+
     if (getMonth(currentDay)===getMonth(day)){
         return (
-            <td className={cn}>
+            <td className={cn} onClick={changeDay}>
                 {format(day, 'd')}
             </td>
         );
