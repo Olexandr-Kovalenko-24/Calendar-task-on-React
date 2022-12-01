@@ -7,7 +7,8 @@ import cx from 'classnames';
 const Day = (props) => {
     const {currentDay, day, changeCurrentDay} = props;
     const cn = cx([styles.days],{
-        [styles.current]: format(currentDay, 'd') === format(day, 'd')
+        [styles.current]: format(currentDay, 'd') === format(day, 'd'),
+        [styles.today]: format(new Date(), 'd') === format(day, 'd')
     })
 
     const changeDay = () => {
