@@ -1,0 +1,22 @@
+.calendar-body {
+    background-color: beige;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.month-year {
+    color: teal;
+}
+
+.day-of-week {
+    color: crimson;
+    font-size: 18px;
+}
