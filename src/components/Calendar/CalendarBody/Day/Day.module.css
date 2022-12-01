@@ -1,0 +1,10 @@
+.days {
+    padding: 0.66vw;
+}
+
+.current {
+    color: crimson;
+    border-radius: 50%;
+    border: 4px solid crimson;
+    box-sizing: border-box;
+}

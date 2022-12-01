@@ -1,13 +1,21 @@
 import { format } from 'date-fns';
 import React from 'react';
+import styles from './Day.module.css';
+import { withDay } from '../../../../HOCs/withDay';
+import cx from 'classnames';
 
 const Day = (props) => {
-    const {day} = props;
+    const {currentDay, day} = props;
+    const cn = cx([styles.days],{
+        [styles.current]: format(currentDay, 'd') === format(day, 'd')
+    })
     return (
-        <td>
+        <td className={cn}>
             {format(day, 'd')}
         </td>
     );
 }
 
-export default Day;
+const DayWithDay = withDay(Day);
+
+export default DayWithDay;

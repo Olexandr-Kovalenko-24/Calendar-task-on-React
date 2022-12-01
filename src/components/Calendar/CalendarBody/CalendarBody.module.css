@@ -14,9 +14,6 @@
 
 .month-year {
     color: teal;
+    padding-bottom: 25px;
 }
 
-.day-of-week {
-    color: crimson;
-    font-size: 18px;
-}

@@ -9,15 +9,18 @@
 }
 
 .weeks-day {
-    font-size: 22px;
-    font-weight: 300;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aquamarine;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color: paleturquoise;
     margin: 0;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 .day-number {
-    font-size: 144px;
+    font-size: 230px;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     color: white;
 }
