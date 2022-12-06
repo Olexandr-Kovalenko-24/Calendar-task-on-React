@@ -1,4 +1,4 @@
-import { getWeeksInMonth, getWeek, getYear } from 'date-fns';
+import { getWeeksInMonth, getWeek, getYear, format } from 'date-fns';
 import React from 'react';
 import Week from '../Week';
 import styles from './Month.module.css';

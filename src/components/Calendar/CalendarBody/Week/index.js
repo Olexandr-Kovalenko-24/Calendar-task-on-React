@@ -1,4 +1,4 @@
-import { addDays, parse, startOfWeek } from 'date-fns';
+import { addDays, parse} from 'date-fns';
 import React from 'react';
 import Day from '../Day';
 
@@ -11,7 +11,7 @@ const Week = (props) => {
 
     return (
         <tr>
-          {arr}  
+          {arr} 
         </tr>
     );
 }
