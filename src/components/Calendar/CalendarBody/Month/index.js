@@ -1,4 +1,4 @@
-import { getWeeksInMonth, getWeek, getYear, format } from 'date-fns';
+import { getWeeksInMonth, getWeek, getYear, startOfMonth } from 'date-fns';
 import React from 'react';
 import Week from '../Week';
 import styles from './Month.module.css';
@@ -7,9 +7,10 @@ const Month = () => {
 
     const weekDays = ['S', 'M', 'T', 'W', 'T', 'F', 'S']
 
+    const monthStart = startOfMonth(new Date())
     const numberOfWeewsInMonth = getWeeksInMonth(new Date());
     const currentYear = getYear(new Date());
-    const weeksNumber = getWeek(new Date());
+    const weeksNumber = getWeek(monthStart);
 
     const weeks = new Array(numberOfWeewsInMonth).fill(null).map((el, index) =>
         <Week key={index} year={currentYear} week={weeksNumber + index} />);
