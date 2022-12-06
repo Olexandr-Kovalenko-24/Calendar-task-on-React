@@ -1,4 +1,4 @@
-import { format, getMonth } from 'date-fns';
+import { format, getMonth, getDayOfYear } from 'date-fns';
 import React from 'react';
 import styles from './Day.module.css';
 import { withDay } from '../../../../HOCs/withDay';
@@ -7,8 +7,8 @@ import cx from 'classnames';
 const Day = (props) => {
     const { currentDay, day, changeCurrentDay } = props;
     const cn = cx([styles.days], {
-        // [styles.current]: format(currentDay, 'd') === format(day, 'd'),
-        // [styles.today]: format(new Date(), 'd') === format(day, 'd')
+        [styles.current]: getDayOfYear(currentDay)===getDayOfYear(day),
+        [styles.today]: getDayOfYear(new Date())===getDayOfYear(day)
     });
 
     const changeDay = () => {
